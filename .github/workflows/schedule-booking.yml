@@ -1,0 +1,53 @@
+name: MindBody Auto Booking
+
+on:
+  # Run every Friday and Saturday at 5:00 AM EST (10:00 AM UTC)
+  # EST is UTC-5, so 5 AM EST = 10 AM UTC
+  schedule:
+    - cron: '0 10 * * 5,6'
+  
+  # Allow manual trigger for testing
+  workflow_dispatch:
+
+jobs:
+  book-classes:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          playwright install chromium
+          playwright install-deps chromium
+      
+      - name: Run booking script
+        env:
+          MINDBODY_PASSWORD: ${{ secrets.MINDBODY_PASSWORD }}
+        run: |
+          python book_class.py
+      
+      - name: Upload screenshots on failure
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: error-screenshots
+          path: |
+            error_*.png
+            *.png
+          retention-days: 7
+      
+      - name: Send notification on failure (optional)
+        if: failure()
+        run: |
+          echo "Booking failed! Check the workflow logs and screenshots."
+          # You can add email/Slack notifications here if needed
+
+

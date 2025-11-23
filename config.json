@@ -1,0 +1,39 @@
+{
+  "studio_url": "https://www.mindbodyonline.com/explore/locations/studio-locomotion",
+  "signin_url": "https://signin.mindbodyonline.com/signin?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Facr_values%3Dnone%26client_id%3DConsumerMarketplace.Gateway%26code_challenge%3DUt_v8paNluhk68vO09SAVUEF5TUI4sLvCiBYuJCFETw%26code_challenge_method%3DS256%26redirect_uri%3Dhttps%253A%252F%252Fwww.mindbodyonline.com%252Fexplore%26response_type%3Dcode%26scope%3Dopenid%2520profile%2520email%2520Mindbody.Clients%2520Mindbody.Api.Connect%2520Mindbody.Api.Payments%2520Mindbody.Api.Rest%2520Mindbody.Identity.UserGateway%2520Identity.Legacy.Gateway%26state%3DTrsmdUAQczUEG99WVb5Na",
+  "email": "fuanne_gm@hotmail.com",
+  "booking_schedule": {
+    "friday": {
+      "target_day": "Saturday",
+      "classes": [
+        {
+          "time": "9:30am",
+          "type": "Weight training",
+          "name": "Athlétique"
+        },
+        {
+          "time": "11:30am",
+          "type": "Weight training",
+          "name": "Athlétique"
+        }
+      ]
+    },
+    "saturday": {
+      "target_day": "Sunday",
+      "classes": [
+        {
+          "time": "9:30am",
+          "type": "Weight training",
+          "name": "Athlétique"
+        },
+        {
+          "time": "11:30am",
+          "type": "Strength training",
+          "name": "Composition"
+        }
+      ]
+    }
+  }
+}
+
+
