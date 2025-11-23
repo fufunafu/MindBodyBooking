@@ -268,6 +268,16 @@ For issues:
 
 MIT License - Feel free to use and modify for your needs.
 
+## Testing Results
+
+✅ **Successfully tested on November 23, 2025**
+- Login: Successful
+- Cookie consent handling: Working
+- Date selection: Working
+- Class finding: Working  
+- Booking flow (Book Now → Buy): Working
+- Test class booked: Monday 7:00 AM Athlétique with Patricia Houde
+
 ## Disclaimer
 
 This tool is for personal use. Ensure automated booking complies with Studio Locomotion's and MindBody's terms of service. Use responsibly.

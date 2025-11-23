@@ -12,7 +12,7 @@ To securely store your MindBody password, you need to add it as a GitHub Secret:
    git add .
    git commit -m "Initial commit: MindBody auto booking system"
    git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/MindBodyBooking.git
+   git remote add origin https://github.com/fufunafu/MindBodyBooking.git
    git push -u origin main
    ```
 
