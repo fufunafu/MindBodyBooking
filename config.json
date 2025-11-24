@@ -1,7 +1,9 @@
 {
   "homepage": "https://www.mindbodyonline.com/explore",
   "studio_url": "https://www.mindbodyonline.com/explore/locations/studio-locomotion",
-  "email": "fuanne_gm@hotmail.com",
+  "email": "your_email@example.com",
+  "captcha_api_key": "YOUR_2CAPTCHA_API_KEY_HERE",
+  "captcha_max_retries": 5,
   "booking_schedule": {
     "friday": {
       "target_day": "Saturday",
@@ -37,10 +39,16 @@
       "target_day": "Monday",
       "classes": [
         {
-          "time": "7:00am",
+          "time": "10:00am",
+          "type": "Strength training",
+          "name": "Composition",
+          "instructor": "Patricia Houde"
+        },
+        {
+          "time": "7:00pm",
           "type": "Weight training",
           "name": "Athlétique",
-          "instructor": "Patricia Houde"
+          "instructor": "Émile Charron"
         }
       ]
     }
